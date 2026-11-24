@@ -26,6 +26,10 @@ nav { gap: 1.45rem; }
 .paper-link, button { font-size: .92rem; font-weight: 600; }
 .paper-link { text-decoration: none; }
 .paper-link span { color: var(--muted); font-size: .75rem; margin-left: .2rem; }
+.listen { display: inline-flex; align-items: center; gap: .35rem; white-space: nowrap; }
+.listen .play-icon { width: 0; height: 0; margin: 0 .1rem 0 0; border-top: .32rem solid transparent; border-bottom: .32rem solid transparent; border-left: .51rem solid #35624f; }
+#podcast { max-width: 35rem; }
+#podcast audio { display: block; width: 100%; margin: 1.4rem 0 1rem; }
 .paper-link:hover, .dialog-paper:hover { text-decoration: underline; }
 #full, .studies { background: transparent; display: inline-flex; align-items: center; justify-content: center; gap: .5rem; border: 1px solid #a7b4b2; border-radius: .3rem; padding: .42rem .85rem; }
 #full:hover, .studies:hover { background: #e4ece5; border-color: var(--ink); }
@@ -102,6 +106,9 @@ dd { margin: .18rem 0 0; }
   .sample span { font-size: .9rem; }
 }
 @media (max-width: 650px) {
+  .topbar { flex-wrap: wrap; padding-block: .6rem; }
+  .topbar nav { flex-wrap: wrap; gap: .65rem 1rem; }
+  .listen .runtime { display: none; }
   .poster { padding: 0 1rem; }
   .university { display: none; }
   .topbar { min-height: 3.6rem; gap: .45rem; }
